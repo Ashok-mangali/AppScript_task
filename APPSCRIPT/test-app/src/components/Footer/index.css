@@ -1,0 +1,111 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+    padding: 40px;
+
+}
+.subscribe-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px;
+}
+.search-container{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;    
+    width: 50%;
+}
+.search-input{
+    outline: none;
+    cursor: pointer;
+}
+.search-button{
+    margin-left: 2px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+span{
+    font-size: 10px;
+}
+.currency-img-container{
+    display: flex;
+    align-items: center;
+}
+.currency-img{
+    height: 30px;
+    width: 30px;
+}
+hr{
+    width: 100%;
+    color: #ffffff;
+}
+
+.quick-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+}
+.copy-rights{
+    text-align: center;
+
+}
+.payment-icons img{
+    height: 30px;
+    width: 40px;
+    margin: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .subscribe-section{
+        flex-direction: column;
+    }
+    .search-section{
+        border-bottom: 1px solid;
+        padding-bottom: 30px;
+    }
+    .search-section h4{
+        font-size: 30px;
+    }
+    .search-container{
+        width: 100%;
+    }
+    .search-input{
+        width: 100%;
+    }
+    .search-button{
+        padding: 20px;
+    }
+    /* .call-us{
+        border-bottom: 1px solid;
+        padding-bottom: 30px;
+    } */
+    .quick-link{
+        flex-direction: column;
+    }
+    .quick-link select{
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin: 20px;
+        width: 100%;
+        color: #fff;
+        background-color: transparent;
+        border-bottom: 1px solid;
+        padding-bottom: 20px;
+        align-self: flex-end;
+        background-color: transparent;
+    }
+    option{
+        background-color: transparent;
+        color: #000;
+    }
+}

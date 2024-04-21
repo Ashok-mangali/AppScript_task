@@ -1,0 +1,116 @@
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-bottom: 1px solid #E5E5E5;
+  }
+  nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+  .logo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+  }
+ 
+  
+  .logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    color: #000000;
+  }
+  
+  .logo-text {
+    font-size: 36px;
+    font-weight: 800;
+    font-family: inter;
+    margin: 0;
+    color: #000000;
+  }
+  
+  .nav-links {
+    list-style: none;
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    align-self: center;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #252020;
+    font-weight: 700;
+    
+  }
+  
+  .nav-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    cursor: pointer;
+  }
+  
+  .language-selection select {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .hamburger-menu {
+    display: none; /* Initially hide the hamburger menu */
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+  }
+  
+  /* Media query for small screens */
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .hamburger-menu {
+        display: flex;
+        order: 0;
+        cursor: pointer;
+      }
+      .nav-links.show {
+        display: block;
+      }
+      .logo-section{
+        order: 1;
+        position: absolute;
+        left: 11%;
+        top: 3%;
+      }
+      .nav-icons{
+        order: 3;
+      }
+      .logo-text{
+        order: 2;
+      }
+      .language-selection{
+        display: none;
+      }
+  }
+  
